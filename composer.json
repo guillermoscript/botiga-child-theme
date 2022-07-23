@@ -1,0 +1,12 @@
+{
+    "name": "guillermo/botigia-child-theme",
+    "description": "just a child theme for the page",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Guillermoscript",
+            "email": "arepayquezo@gmail.com"
+        }
+    ],
+    "require": {}
+}
