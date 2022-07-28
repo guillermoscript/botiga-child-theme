@@ -8,5 +8,12 @@
             "email": "arepayquezo@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Admin\\": "./Admin/",
+            "Includes\\": "./Includes/",
+            "Front\\": "./Front/"
+        }
+    },
     "require": {}
 }
