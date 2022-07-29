@@ -2,6 +2,7 @@
 
 namespace Includes;
 
+use Admin\Controller\BillingController;
 use Front\Enqueue as FrontEnqueue;
 
 final class Init
@@ -11,6 +12,7 @@ final class Init
     {
         return [
             FrontEnqueue::class,
+            BillingController::class,
         ];
     }
 
