@@ -37,6 +37,8 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'botiga-child-theme'
 );
 
+$myUpdateChecker->setBranch('master');
+
 function translate_reply($translated)
 {
 	$translated = str_replace('Unused Refer a Friend Coupons', 'Cupones para recomendar a un amigo no utilizados', $translated);
