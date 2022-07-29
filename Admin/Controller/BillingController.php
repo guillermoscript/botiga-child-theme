@@ -9,8 +9,7 @@ class BillingController
     {
 
         add_filter('woocommerce_checkout_fields', [$this, 'custom_override_checkout_fields_xd']);
-
-        add_filter('woocommerce_checkout_fields', [$this, 'remove_email']);
+        add_filter('woocommerce_checkout_fields', [$this, 'remove_email'], PHP_INT_MAX);
     }
 
 
@@ -22,7 +21,8 @@ class BillingController
         return $address_fields;
     }
 
-    public function custom_override_checkout_fields_xd($fields) {
+    public function custom_override_checkout_fields_xd($fields)
+    {
         unset($fields['billing']['billing_company']);
         unset($fields['billing']['billing_cid']);
 
