@@ -10,7 +10,7 @@ class BillingController
 
         add_filter('woocommerce_checkout_fields', [$this, 'custom_override_checkout_fields_xd']);
 
-        add_filter('woocommerce_checkout_fields', [$this, 'remove_email']);
+        add_filter('woocommerce_checkout_fields', [$this, 'remove_email'], PHP_INT_MAX);
     }
 
 
